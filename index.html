@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Hacks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div id="fullscreenNav" class="overlay-nav">
+    <a href="javascript:void(0)" class="close-nav" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="#home" onclick="closeNav()">Home</a>
+        <a href="#hack" onclick="closeNav()">Hackathon</a>
+        <a href="#about" onclick="closeNav()">About</a>
+        <a href="https://forms.google.com" target="_blank" class="cta-btn" style="display: inline-block; margin-top: 20px; font-size: 1.2rem; padding: 12px 30px;">Register</a>
+    </div>
+</div>
+
+<div class="nav-button" onclick="openNav()">
+    <span class="material-icons">menu</span>
+</div>
+
+<header>
+    <a href="#home" class="logo-container">
+        <img src="images/logo.png" alt="Sakura Hacks Logo" style="width: 36px; height: 36px; object-fit: contain;">
+        <span class="logo-text">Sakura Hacks</span>
+    </a>
+    <nav>
+        <ul>
+            <li class="active-tab"><a href="#home">Home</a></li>
+            <li><a href="#hack">Hackathon</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://forms.google.com" target="_blank" class="cta-btn">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    
+    <section id="home" class="page active-page">
+        
+        <section class="home-slider">
+            <div class="home-slider-holder">
+                <div class="home-slide s1">
+                    <h2>Welcome to Sakura Hacks</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button onclick="showPage('hack')">Explore</button>
+                </div>
+                <div class="home-slide s2">
+                    <h2>Learn &amp; Build</h2>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <button onclick="showPage('hack')">View Tracks</button>
+                </div>
+                <div class="home-slide s3">
+                    <h2>Join Our Community</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <button onclick="showPage('about')">Meet the Team</button>
+                </div>
+            </div>
+            <div class="slider-btns">
+                <button onclick="slideLeft()" class="material-icons">chevron_left</button>
+                <button onclick="slideRight()" class="material-icons">chevron_right</button>
+            </div>
+        </section>
+
+        <section style="text-align: center; padding: 20px 0 40px 0;">
+            <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Who are we?</h1>
+            <p style="max-width: 750px; margin: 0 auto 30px auto; font-size: 1.15rem; line-height: 1.7; color: rgba(42, 52, 65, 0.85);">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <h3 style="font-family: 'Montserrat', sans-serif; color: var(--deep-blossom); font-size: 1.2rem; margin-bottom: 5px;">Location</h3>
+            <p style="font-size: 1.05rem; color: rgba(42, 52, 65, 0.9);">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+        </section>
+
+        <section style="margin-top: 20px; border-top: 1px solid rgba(255, 183, 197, 0.2); padding-top: 50px;">
+            <h2 class="section-title">Our Team</h2>
+            <div class="founders-grid">
+                
+                <div class="founder-card">
+                    <div class="avatar-frame">
+                        <img src="images/ayush.jpg" onerror="this.style.display='none';" class="avatar-img" alt="Ayush Kar">
+                        <span class="avatar-fallback">A</span>
+                    </div>
+                    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem;">Ayush Kar</h3>
+                    <div class="founder-title">Co-Founder</div>
+                    <p style="font-size: 0.95rem; color: rgba(42, 52, 65, 0.9); margin-bottom: 12px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                    </p>
+                    <div style="font-size: 0.9rem; font-weight: 600; color: var(--deep-blossom);">Favorite Topic: Lorem Ipsum</div>
+                </div>
+
+                <div class="founder-card">
+                    <div class="avatar-frame">
+                        <img src="images/connor.jpg" onerror="this.style.display='none';" class="avatar-img" alt="Connor">
+                        <span class="avatar-fallback">C</span>
+                    </div>
+                    <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem;">Connor</h3>
+                    <div class="founder-title">Co-Founder</div>
+                    <p style="font-size: 0.95rem; color: rgba(42, 52, 65, 0.9); margin-bottom: 12px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                    </p>
+                    <div style="font-size: 0.9rem; font-weight: 600; color: var(--deep-blossom);">Favorite Topic: TBD</div>
+                </div>
+
+            </div>
+        </section>
+
+        <section style="margin-top: 60px; text-align: center;">
+            <h2 class="section-title">Group Photo</h2>
+            <div style="width: 100%; max-width: 800px; min-height: 400px; background-color: #ffeef1; border: 2px dashed var(--sakura-pink); border-radius: 16px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: var(--deep-blossom); font-weight: 600; overflow: hidden; position: relative;">
+                <img src="images/group.jpg" id="main-group-photo" onerror="this.style.display='none'; document.getElementById('photo-fallback-text').style.display='block';" style="width: 100%; height: auto; display: block;" alt="Sakura Hacks Team">
+                <span id="photo-fallback-text" style="display: none; padding: 20px;">Team Group Photo Container</span>
+            </div>
+        </section>
+
+        <section style="margin-top: 60px; margin-bottom: 40px; border-top: 1px solid rgba(255, 183, 197, 0.2); padding-top: 50px; text-align: center;">
+            <h2 class="section-title">Sponsors</h2>
+            <p style="max-width: 700px; margin: 0 auto 35px auto; font-size: 1.1rem; line-height: 1.6; color: rgba(42, 52, 65, 0.9);">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px; margin: 20px auto 50px auto; max-width: 800px;">
+                <div style="width: 180px; height: 90px; background-color: white; border: 1px dashed rgba(255, 183, 197, 0.4); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #a4b0be; font-size: 0.85rem; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.01);">
+                    Sponsor Placeholder
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid rgba(255, 183, 197, 0.15); padding-top: 40px; margin-top: 40px;">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; margin-bottom: 15px; color: var(--text-dark);">Join Our Team</h3>
+                <p style="max-width: 600px; margin: 0 auto 25px auto; font-size: 1rem; color: rgba(42, 52, 65, 0.85);">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="https://forms.google.com" target="_blank" class="cta-btn" style="display: inline-block; font-size: 1rem; padding: 12px 30px;">Apply</a>
+            </div>
+        </section>
+    </section>
+
+    <section id="hack" class="page">
+        <section style="text-align: center; padding: 20px 0;">
+            <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 15px;">The Hackathon Experience</h1>
+            <p style="max-width: 650px; margin: 0 auto; font-size: 1.15rem; color: rgba(42, 52, 65, 0.85);">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </section>
+
+        <section class="info-grid" style="margin-top: 30px;">
+            <div class="info-card">
+                <h3>Explorers Track</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="info-card">
+                <h3>Pioneers Track</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+            </div>
+        </section>
+
+        <section class="schedule-section">
+            <h2 class="section-title">Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="time">03:30 PM</span>
+                    <span><b>Arrival:</b> Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">03:45 PM</span>
+                    <span><b>Opening:</b> Consectetur adipiscing elit.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">04:00 PM</span>
+                    <span><b>Hacking:</b> Sed do eiusmod tempor.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">06:15 PM</span>
+                    <span><b>Code Freeze:</b> Ut labore et dolore.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">06:20 PM</span>
+                    <span><b>Judging:</b> Magna aliqua.</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">06:45 PM</span>
+                    <span><b>Closing:</b> Ut enim ad minim veniam.</span>
+                </div>
+            </div>
+        </section>
+    
+        <section class="hero">
+            <div class="status-tag">Next Event: Coming Soon</div>
+            <h1 class="six-letter-desc">Hackathon!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#hack" class="cta-btn" style="font-size: 1.1rem; padding: 14px 36px;">Explore</a>
+        </section>
+
+        <section class="info-grid">
+            <div class="info-card">
+                <h3>Location</h3>
+                <p>
+                    Lorem ipsum dolor<br>
+                    <b>Consectetur adipiscing</b><br>
+                    <span style="font-size: 0.95rem; opacity: 0.85;">Elit sed do eiusmod</span><br>
+                    <span style="display: inline-block; margin-top: 5px; color: var(--deep-blossom); font-weight: 600;">Tempor incididunt</span>
+                </p>
+            </div>
+            <div class="info-card">
+                <h3>Date &amp; Time</h3>
+                <p>Lorem ipsum dolor<br>Friday, 3:30 PM – 7:00 PM</p>
+            </div>
+            <div class="info-card">
+                <h3>Admission</h3>
+                <p>Free Entry<br>Food Included!</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2 class="section-title">FAQs</h2>
+            
+            <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">Lorem ipsum dolor sit amet?</button>
+                <div class="accordion-content">
+                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">Ut enim ad minim veniam?</button>
+                <div class="accordion-content">
+                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">Duis aute irure dolor?</button>
+                <div class="accordion-content">
+                    <p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="about" class="page">
+        <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; text-align: center; margin-bottom: 20px;">About Us</h2>
+        <p style="max-width: 750px; margin: 0 auto; font-size: 1.15rem; line-height: 1.7; color: rgba(42, 52, 65, 0.85); text-align: center;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div style="margin-top: 40px; text-align: center;">
+            <h3 style="font-family: 'Montserrat', sans-serif; color: var(--deep-blossom);">Our Mission</h3>
+            <p style="max-width: 600px; margin: 10px auto;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div style="margin-top: 40px; text-align: center;">
+            <h3 style="font-family: 'Montserrat', sans-serif; color: var(--deep-blossom);">Our Vision</h3>
+            <p style="max-width: 600px; margin: 10px auto;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Sakura Hacks. Lorem ipsum dolor sit amet.</p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
